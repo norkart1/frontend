@@ -8,7 +8,7 @@ const UserForm = ({ onUserAdded }) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post("https://your-backend.vercel.app/api/users/add", { fullName, email });
+            await axios.post("https://backend-smoky-sigma-90.vercel.app/api/users/add", { fullName, email });
             alert("User added successfully!");
             setFullName("");
             setEmail("");

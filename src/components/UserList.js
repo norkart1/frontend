@@ -6,7 +6,7 @@ const UserList = () => {
 
     const fetchUsers = async () => {
         try {
-            const res = await axios.get("https://your-backend.vercel.app/api/users");
+            const res = await axios.get("https://backend-smoky-sigma-90.vercel.app/api/users");
             setUsers(res.data);
         } catch (error) {
             alert("Error fetching users!");
